@@ -55,5 +55,5 @@ jobs:
 
       - name: Terraform destroy force
         id: destroy
-        run: terraform apply -auto-approve -no-color
+        run: terraform destroy -auto-approve -no-color
         continue-on-error: true
