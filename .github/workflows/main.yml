@@ -48,7 +48,12 @@ jobs:
         run: terraform plan -no-color
         continue-on-error: true
 
-        - name: Terraform apply force
+      - name: Terraform apply force
         id: apply
+        run: terraform apply -auto-approve -no-color
+        continue-on-error: true
+
+      - name: Terraform destroy force
+        id: destroy
         run: terraform apply -auto-approve -no-color
         continue-on-error: true
