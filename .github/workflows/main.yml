@@ -1,4 +1,4 @@
-name: CI/CD
+name: Deploy Terraform
 on:
   workflow_dispatch:
     inputs:
@@ -14,7 +14,7 @@ on:
     branches: [master]
     types: [opened, reopened]
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,7 +22,7 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
-        
+
       - name: Terraform fmt
         id: fmt
         run: terraform fmt -check
