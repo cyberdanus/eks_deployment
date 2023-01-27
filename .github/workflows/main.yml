@@ -31,29 +31,35 @@ jobs:
           aws-region: eu-central-1
 
       - name: Terraform fmt
+        working-directory: ./eks_dep
         id: fmt
         run: terraform fmt -check
         continue-on-error: true
 
       - name: Terraform Init
+        working-directory: ./eks_dep
         id: init
         run: terraform init
 
       - name: Terraform Validate
+        working-directory: ./eks_dep
         id: validate
         run: terraform validate -no-color
 
       - name: Terraform Plan
+        working-directory: ./eks_dep
         id: plan
         run: terraform plan -no-color
         continue-on-error: true
 
       - name: Terraform apply force
+        working-directory: ./eks_dep
         id: apply
         run: terraform apply -auto-approve -no-color
         continue-on-error: true
 
       - name: Terraform destroy force
+        working-directory: ./eks_dep
         id: destroy
         run: terraform destroy -auto-approve -no-color
         continue-on-error: true
