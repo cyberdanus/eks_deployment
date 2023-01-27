@@ -3,13 +3,13 @@ on:
   workflow_dispatch:
     inputs:
       needdeploy:
-        description: 'Need to push to Docker Registry?'
+        description: 'Please choice action!'
         required: true
-        default: '(Yes)'
+        default: 'Install'
         type: choice
         options:
-        - (Yes)
-        - (No)
+        - Install
+        - Destroy
   pull_request:
     branches: [master]
     types: [opened, reopened]
@@ -53,13 +53,27 @@ jobs:
         continue-on-error: true
 
       - name: Terraform apply force
+        if: github.event.inputs.needdeploy == 'Install'
         working-directory: ./eks_dep
         id: apply
         run: terraform apply -auto-approve -no-color
         continue-on-error: true
 
       - name: Terraform destroy force
+        if: github.event.inputs.needdeploy == 'Destroy'
         working-directory: ./eks_dep
         id: destroy
         run: terraform destroy -auto-approve -no-color
         continue-on-error: true
+        
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ${{ github.actor }} created commit and start building artifact:
+            
+            Repository: ${{ github.repository }}
+            Job status: ${{ job.status }}
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
