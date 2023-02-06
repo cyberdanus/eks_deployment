@@ -25,7 +25,7 @@ jobs:
 
       - uses: azure/setup-kubectl@v3
         with:
-          version: '1.26.1' # default is latest stable
+          version: '1.26.1'
         id: install
 
       - name: Configure AWS Credentials
