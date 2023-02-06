@@ -74,6 +74,7 @@ jobs:
       - name: Deploy to Terraform 
         if: github.event.inputs.needdeploy == 'Install'
         run: |
+          ls -lah ~/.kube/
           cat ~/.kube/config
           kubectl create namespace argocd
           kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/install.yaml
