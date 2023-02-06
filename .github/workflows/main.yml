@@ -33,7 +33,7 @@ jobs:
         run: |
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip awscliv2.zip
-          ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+          ./aws/install --update
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
