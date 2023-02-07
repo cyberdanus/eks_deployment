@@ -81,8 +81,8 @@ jobs:
       - name: Deploy to Terraform 
         if: github.event.inputs.needdeploy == 'Install'
         run: |
-          export aws_reg=$(terraform output -raw region)
-          export aws_clu=$(terraform output -raw cluster_name)
+          echo $(terraform output -raw region)
+          $(terraform output -raw cluster_name)
           /usr/local/bin/aws eks update-kubeconfig --name $(terraform output -raw cluster_name) --region $(terraform output -raw region)
           kubectl create namespace argocd
           kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/install.yaml
