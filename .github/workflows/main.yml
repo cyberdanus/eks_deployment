@@ -84,9 +84,9 @@ jobs:
         run: |
           echo $(terraform output -raw region)
           $(terraform output -raw cluster_name)
-          /usr/local/bin/aws eks update-kubeconfig --name $(terraform output cluster_name) --region $(terraform output region)
-          kubectl create namespace argocd
-          kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/install.yaml
+          # /usr/local/bin/aws eks update-kubeconfig --name $(terraform output cluster_name) --region $(terraform output region)
+          # kubectl create namespace argocd
+          # kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/install.yaml
         continue-on-error: true
         
       - name: send telegram message on push
