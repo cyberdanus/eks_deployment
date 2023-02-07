@@ -22,6 +22,8 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_wrapper: false
 
       - uses: azure/setup-kubectl@v3
         with:
