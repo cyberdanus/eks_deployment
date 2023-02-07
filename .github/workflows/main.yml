@@ -80,6 +80,7 @@ jobs:
 
       - name: Deploy to Terraform 
         if: github.event.inputs.needdeploy == 'Install'
+        working-directory: ./eks_dep
         run: |
           echo $(terraform output -raw region)
           $(terraform output -raw cluster_name)
