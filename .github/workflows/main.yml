@@ -96,6 +96,7 @@ jobs:
         if: github.event.inputs.needdeploy == 'Install'
         working-directory: ./argo_cd
         run: |
+          kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
           kubectl -n argocd create -f .
         continue-on-error: true
         
