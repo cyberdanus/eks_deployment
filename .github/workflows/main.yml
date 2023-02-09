@@ -91,6 +91,13 @@ jobs:
           kubectl create namespace argocd
           kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
         continue-on-error: true
+
+      - name: Deploy to ArgoCD 
+        if: github.event.inputs.needdeploy == 'Install'
+        working-directory: ./argo_cd
+        run: |
+          kubectl -n argocd create -f .
+        continue-on-error: true
         
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
