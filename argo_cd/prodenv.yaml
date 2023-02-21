@@ -8,6 +8,7 @@ spec:
     namespace: ingress-nginx
     server: 'https://kubernetes.default.svc'
   source:
+    path: base
     repoURL: 'https://github.com/cyberdanus/my_kustomize_app'
     targetRevision: HEAD
   sources: []
