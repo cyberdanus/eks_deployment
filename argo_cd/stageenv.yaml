@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: stage
+spec:
+  destination:
+    name: ''
+    namespace: stage
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: overlay/stage
+    repoURL: 'https://github.com/cyberdanus/my_kustomize_app'
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
+      - ServerSideApply=true
+    retry:
+      limit: 2
+      backoff:
+        duration: 5s
+        maxDuration: 3m0s
+        factor: 2
