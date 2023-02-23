@@ -1,5 +1,5 @@
 # eks_deployment
-==========================================================================================================
+========================================================================================
 Homework task for Urban
 The goal of the task is to demonstrate how a candidate can create an environment with terraform. You should commit little and often to show your ways of working
 
