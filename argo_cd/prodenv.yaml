@@ -8,8 +8,8 @@ spec:
     namespace: prod
     server: 'https://kubernetes.default.svc'
   source:
-    path: base
-    repoURL: 'https://github.com/cyberdanus/my_kustomize_app'
+    path: kustomize_app/base
+    repoURL: 'https://github.com/cyberdanus/eks_deployment'
     targetRevision: HEAD
   sources: []
   project: default

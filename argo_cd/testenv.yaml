@@ -8,8 +8,8 @@ spec:
     namespace: test
     server: 'https://kubernetes.default.svc'
   source:
-    path: overlay/test
-    repoURL: 'https://github.com/cyberdanus/my_kustomize_app'
+    path: kustomize_app/overlay/test
+    repoURL: 'https://github.com/cyberdanus/eks_deployment'
     targetRevision: HEAD
   sources: []
   project: default
