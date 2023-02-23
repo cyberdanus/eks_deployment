@@ -1,0 +1,13 @@
+resources: 
+- deployment.yaml
+- ingress-config.yaml
+- sm.yaml
+
+commonLabels:
+  app: web-custom-app
+
+commonAnnotations:
+  app: web-custom-annontations
+
+nameSuffix:
+  -v1

@@ -1,0 +1,10 @@
+bases:
+- ../../base
+
+namespace: test
+
+namePrefix:
+  test-
+
+patches:
+ - ingress.yaml
