@@ -244,7 +244,7 @@ Deploy use ArgoCD for continuous deployment, all configuration files you can fin
 
 ![Telegram output](documentation/pics/Telegram_Output.png)
 ![Application on web](documentation/pics/http.png)
-![Application prod diffirent Pods](documentation/pics/prod_hhtp.png)
+![Application test diffirent Pods](documentation/pics/test.png)
 ![Pods in Lens](documentation/pics/LensPods.png)
 ![Stages in ArgoCI](documentation/pics/ArgoCI.png)
 ![Connect toPrometheus](documentation/pics/prometheus_connect.png)
