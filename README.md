@@ -304,5 +304,9 @@ The goal of the task is to demonstrate how a candidate can create an environment
 
 ---
 
+## Application
+
+All actions with the application are performed in an additional repository.
+https://github.com/cyberdanus/application
 
 
