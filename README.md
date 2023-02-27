@@ -277,13 +277,12 @@ You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deploy
 
 ## Homework task for Urban
 
-* [Application and Task](documentation/hw)
 
 The goal of the task is to demonstrate how a candidate can create an environment with terraform. You should commit little and often to show your ways of working
 
 ### Requirements
 
-- The environment should get created in Google Cloud Platform
+- The environment should get created in AWS
 - Create a VPC native Kubernetes cluster
 - Host the provided Node.js application provided in the `app` folder in the created cluster with 3 replicas
 - Expose the provided application to the public internet
