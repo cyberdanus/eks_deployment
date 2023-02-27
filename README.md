@@ -20,10 +20,11 @@ This repo contains a [Terraform](https://www.terraform.io) code for running a Ku
     - [Docker image name](#docker-image-name)
   - [**Deploy configuration**](#deploy-configuration)
 - [Destroy infrustructure](#destroy-infrustructure)
+- [All about Application](#application)
 - [Homework task for Urban](#homework-task-for-urban)
   - [Requirements](#requirements)
   - [What gets evaluated](#what-gets-evaluated)
-- [All about Application](#application)
+
 ---
 
 ## Quickstart
@@ -276,6 +277,11 @@ You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deploy
 
 </details>
 
+## Application
+
+All actions with the application are performed in an additional repository.
+https://github.com/cyberdanus/application
+
 
 
 ---
@@ -304,9 +310,5 @@ The goal of the task is to demonstrate how a candidate can create an environment
 
 ---
 
-## Application
-
-All actions with the application are performed in an additional repository.
-https://github.com/cyberdanus/application
 
 
