@@ -139,6 +139,7 @@ kubectl get nodes
 ### Terraform code
 
 <details><summary>Infrustructure</summary>
+
 Any manifests are based at [eks_dep](/eks_dep/) directory.
 
 
@@ -166,8 +167,6 @@ GitHub Secrets link like this: `https://github.com/<Your-Account-Name>/<Your-Rep
   * **AWS_SECRET_ACCESS_KEY** - Secret Access Key to connect in Cluster
   * **TELEGRAM_TO** - Telegram channel id for sending a messages
   * **TELEGRAM_TOKEN** - Telegram API access token
-  * **SLACK_WEBHOOK**` - [Webhook URL](https://api.slack.com/apps/*******/incoming-webhooks?) to connect in [Slack API](https://api.slack.com) and send messages
-  * **SLACK_BOT_TOKEN** - Slack channel id token for sending a messages
   * **DOCKERHUB_TOKEN** - Docker token for access to DockerHub
   * **DOCKERHUB_USERNAME** - DockerHub Username
 
