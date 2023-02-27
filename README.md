@@ -202,6 +202,7 @@ You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deploy
 
 #### Workflow Steps
 <details><summary>Workflow Steps</summary>
+
 * **Checkout** - Clone GitHub repository
 * **Setup Terraform** - Setup terraform CLI utility
 * **Setup KubeCTL** - Setup kubectl CLI utility  
