@@ -198,7 +198,7 @@ terraform output
 
 You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deployment/blob/main/.github/workflows/main.yml) and run `Install` like on picture bellow.
 
-![Build and Deploy to EKS](documentation/pics/gha.png)
+![Build and Deploy to EKS](documentation/pics/eks_install.png)
 
 </br>
 
@@ -230,6 +230,9 @@ Docker image has image name:
 
 Deploy use ArgoCD for continuous deployment, all configuration files you can find in folder [argo_cd](/argo_cd/)
 
+![Connect to ArgoCD & admin password](documentation/pics/argocd.png)
+![ArgoCD login promt](documentation/pics/argocd1.png)
+
 * `ingress-nginx.yaml` - Deploy NGINX ingress controller from HELM chart
 * `prom.yaml` - Deploy Kube-Prometheus Operator from HELM chart
 * `prodenv.yaml` - Deploy a Production environment of the application
@@ -239,21 +242,25 @@ Deploy use ArgoCD for continuous deployment, all configuration files you can fin
 
 </br><details><summary>Deploy results</summary>
 
-![Slack output](documentation/pics/Slack_Output.png)
+![Telegram output](documentation/pics/Telegram_Output.png)
 ![Application on web](documentation/pics/http.png)
 ![Application prod diffirent Pods](documentation/pics/prod_hhtp.png)
 ![Pods in Lens](documentation/pics/LensPods.png)
+![Stages in ArgoCI](documentation/pics/ArgoCI.png)
+![Connect toPrometheus](documentation/pics/prometheus_connect.png)
 ![Metrics in Prometheus](documentation/pics/prometheus_metrics.png)
-![Metrics in Grafana](documentation/pics/grafana.png)
-
+![Prometheus metrics graph](/documentation/pics/prometheus_metrics2.png)
 </details></br>
 
 <details><summary>Show the application the Internet</summary>
 
 In this task i use dynamic name witch assigned to ingress comtroller. In future if domain was enable to assign we able to use Route53 for dynamic name assigning to the project.
 
-
-![Telegram message](documentation/pics/Telegram_Output.png)
+![Ingress WEB url](documentation/pics/ingress.png)
+![Stage pods](documentation/pics/stage.png)
+![Stage pod metrics](documentation/pics/stagem.png)
+![Test pods](documentation/pics/test.png)
+![Test pod metrics](documentation/pics/testm.png)
 
 </details></br>
 
@@ -264,7 +271,7 @@ In this task i use dynamic name witch assigned to ingress comtroller. In future 
 
 You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deployment/blob/main/.github/workflows/main.yml) and run `Destroy` like on picture bellow.
 (*it takes about 15-20 minutes*)
-![Destroy EKS](documentation/pics/gha_destroy.png)
+![Destroy EKS](documentation/pics/eks_destroy.png)
 
 
 
@@ -297,4 +304,4 @@ The goal of the task is to demonstrate how a candidate can create an environment
 ---
 
 
-![Prometheus metrics in Grafana](/documentation/pics/prometheus_metrics2.png)
+
