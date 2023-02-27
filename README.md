@@ -266,10 +266,13 @@ In this task i use dynamic name wich assigned to ingress controller. In future i
 
 ## Destroy infrustructure
 
+<details><summary>Destroy infrustructure</summary>
+
 You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deployment/blob/main/.github/workflows/main.yml) and run `Destroy` like on picture bellow.
 (*it takes about 15-20 minutes*)
 ![Destroy EKS](documentation/pics/eks_destory.png)
 
+</details>
 
 
 
