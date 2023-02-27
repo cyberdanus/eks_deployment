@@ -198,7 +198,7 @@ You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deploy
 
 ![Build and Deploy to EKS](documentation/pics/eks_install.png)
 
-</br>
+</details>
 
 #### Workflow Steps
 * **Checkout** - Clone GitHub repository
