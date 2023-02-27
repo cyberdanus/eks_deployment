@@ -254,7 +254,7 @@ Deploy use ArgoCD for continuous deployment, all configuration files you can fin
 
 <details><summary>Show the application the Internet</summary>
 
-In this task i use dynamic name witch assigned to ingress comtroller. In future if domain was enable to assign we able to use Route53 for dynamic name assigning to the project.
+In this task i use dynamic name wich assigned to ingress controller. In future if domain was enable to assign we able to use Route53 for dynamic name assigning to the project.
 
 ![Ingress WEB url](documentation/pics/ingress.png)
 ![Stage pods](documentation/pics/stage.png)
