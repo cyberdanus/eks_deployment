@@ -15,7 +15,7 @@ This repo contains a [Terraform](https://www.terraform.io) code for running a Ku
   - [Terraform code](#terraform-code)
   - [How use GitHub Actions to deploy application](#how-use-github-actions-to-deploy-application)
     - [Add GitHub Repository Secrets](#add-github-repository-secrets)
-    - [Deploy App](#deploy-app)
+    - [Deploy App](#deploy-infrustructure-and-app)
     - [Workflow Steps](#workflow-steps)
     - [Docker image name](#docker-image-name)
   - [**Deploy configuration**](#deploy-configuration)
