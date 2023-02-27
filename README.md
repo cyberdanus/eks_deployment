@@ -189,9 +189,9 @@ terraform output
 </details></br>
 
 
-#### Deploy App
+## Deploy infrustructure and App
 
-<details><summary>Deploy App</summary>
+<details><summary>Deploy infrustructure and App</summary>
 
 You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deployment/blob/main/.github/workflows/main.yml) and run `Install` like on picture bellow.
 
