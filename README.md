@@ -271,7 +271,7 @@ In this task i use dynamic name witch assigned to ingress comtroller. In future 
 
 You have to go in [GitHub Actions page](https://github.com/cyberdanus/eks_deployment/blob/main/.github/workflows/main.yml) and run `Destroy` like on picture bellow.
 (*it takes about 15-20 minutes*)
-![Destroy EKS](documentation/pics/eks_destroy.png)
+![Destroy EKS](documentation/pics/eks_destory.png)
 
 
 
