@@ -225,6 +225,8 @@ Docker image has image name:
 
 ### **Deploy configuration**
 
+<details><summary>Deploy configuration</summary>
+
 Deploy use ArgoCD for continuous deployment, all configuration files you can find in folder [argo_cd](/argo_cd/)
 
 ![Connect to ArgoCD & admin password](documentation/pics/argocd.png)
@@ -236,7 +238,7 @@ Deploy use ArgoCD for continuous deployment, all configuration files you can fin
 * `testenv.yaml` - Deploy a Test environment of the application
 * `stageenv.yaml` - Deploy a Stage environment of the application
 
-
+</details>
 </br><details><summary>Deploy results</summary>
 
 ![Telegram output](documentation/pics/Telegram_Output.png)
