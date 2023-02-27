@@ -19,12 +19,10 @@ This repo contains a [Terraform](https://www.terraform.io) code for running a Ku
     - [Workflow Steps](#workflow-steps)
     - [Docker image name](#docker-image-name)
   - [**Deploy configuration**](#deploy-configuration)
-  - [Changes in the application](#changes-in-the-application)
 - [Destroy infrustructure](#destroy-infrustructure)
 - [Homework task for Urban](#homework-task-for-urban)
   - [Requirements](#requirements)
   - [What gets evaluated](#what-gets-evaluated)
-- [List of decisions/compromises](#list-of-decisionscompromises)
 
 ---
 
